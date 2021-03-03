@@ -7,9 +7,11 @@
 
 print('= ' * 6 + 'ANALISE DE FRASE' + ' =' * 6)
 
-frase = input('Informe uma frase: ')
+frase = input('Informe uma frase: ').lower()
 print(
     'Quantidade de letras a: {}\nPosição da primeira: {}\nPosição da ultima: {}'
-    .format(frase.count('a'), 1 + frase.find('a'), 'a'))
+    .format(frase.count('a'),
+            frase.find('a') + 1,
+            frase.rfind('a') + 1))
 
 print('= ' * 15)
