@@ -6,20 +6,15 @@ print('= ' * 6 + 'MAIOR DOS 3' + ' =' * 6)
 primeiro = float(input('Informe o primeiro número: '))
 segundo = float(input('Informe o segundo número: '))
 terceiro = float(input('Informe o terceiro número: '))
-maior = 0
-menor = 0
-if (primeiro > segundo) and (segundo > terceiro):
-    maior = primeiro
-elif (segundo > primeiro) and (primeiro > terceiro):
+maior = primeiro
+if (segundo > primeiro) and (primeiro > terceiro):
     maior = segundo
-else:
+if (terceiro > segundo) and (segundo > primeiro):
     maior = terceiro
-
-if (primeiro < segundo) and (segundo < terceiro):
-    menor = primeiro
-elif (segundo < primeiro) and (primeiro < terceiro):
+menor = primeiro
+if (segundo < primeiro) and (primeiro < terceiro):
     menor = segundo
-else:
+if (terceiro < primeiro) and (primeiro < segundo):
     menor = terceiro
 print('Maior: {}\nMenor: {}'.format(maior, menor))
 

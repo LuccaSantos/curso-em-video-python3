@@ -1,3 +1,0 @@
-'''
-    Crie um script 
-'''
