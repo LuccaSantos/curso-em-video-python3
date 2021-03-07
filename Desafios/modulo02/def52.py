@@ -6,14 +6,13 @@ import emoji
 print('= ' * 6 + 'PRIMO OU NÃO' + ' =' * 6)
 
 numero = int(input('Diga um número: '))
-primo = False
+numero_de_divisores = 0
 
 for contador in range(1, numero + 1):
-    if (numero % contador != 0):
-        if (contador == numero) or (contador == 1):
-            primo = True
+    if (numero % contador == 0):
+        numero_de_divisores += 1
 
-if (primo == True):
+if (numero_de_divisores == 2):
     print('\U0001F92D É PRIMO')
 else:
     print('\U0001F600 NÃO É PRIMO')
