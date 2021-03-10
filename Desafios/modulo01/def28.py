@@ -5,7 +5,7 @@
 
 import random
 
-print('= ' * 6 + 'SILVA OU NAO' + ' =' * 6)
+print('= ' * 6 + 'CHUTE UM NÚMERO' + ' =' * 6)
 
 numero = random.randrange(0, 5)
 chute = int(input('Chuta um número de 0 a 5: '))
